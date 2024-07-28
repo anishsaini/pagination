@@ -1,38 +1,26 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
 .pagination {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 
-.pagination ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-
-.pagination li {
-  margin: 0 5px;
-}
-
 .pagination button {
+  margin: 0 5px;
   padding: 5px 10px;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.pagination button:hover {
-  background-color: #e9e9e9;
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
 }
 
 .pagination button:disabled {
+  background-color: #e9ecef;
   cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.pagination .active button {
-  font-weight: bold;
-  background-color: #e9e9e9;
-  border-color: #ccc;
 }
